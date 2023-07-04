@@ -6,6 +6,7 @@ Pablo AI is a voice-based AI assistant that allows users to interact with an art
 
 - Voice Recognition: Pablo AI can understand voice commands from the user using the SpeechRecognition library.
 - Information Retrieval: The assistant can fetch information from Wikipedia based on user queries.
+- Natural Language Processing: The assistant uses the `pyttsx3` library to convert text into speech, enabling a conversational experience.
 - Website Opening: Pablo AI can open websites based on user commands.
 - Time Reporting: Users can ask the assistant for the current time, and it will provide the information.
 - Conversational AI: The OpenAI GPT-3 model is used to engage in conversation and provide responses based on user queries.
@@ -16,8 +17,13 @@ To run the Pablo AI project, follow these steps:
 
 1. Clone or download the repository to your local machine.
 2. Install the required dependencies by running the following command:
-3. Obtain the required API key for the OpenAI GPT-3 model.
-4. Replace the placeholder API key in the `config.py` file with your actual API key.
+```shell
+   pip install pyttsx3
+   pip install SpeechRecognition
+   pip install wikipedia-api
+   pip install openai
+4. Obtain the required API key for the OpenAI GPT-3 model.
+5. Replace the placeholder API key in the `config.py` file with your actual API key.
 
 ## Usage
 
@@ -27,6 +33,14 @@ To run the Pablo AI project, follow these steps:
 4. The assistant will interpret the command and perform the appropriate action, such as opening a website or retrieving information.
 5. For conversational queries, the assistant will use the OpenAI GPT-3 model to generate responses.
 6. To stop the assistant, you can say "Pablo stop" or exit the program.
+## Examples
+
+Here are a few examples of how to interact with Pablo AI:
+
+1. **Open Websites**: Say commands like "Open YouTube," "Open Wikipedia," or "Open Google" to see Pablo AI open the respective websites.
+2. **General Knowledge**: Test the AI's knowledge with queries like "Who is the president of the United States?" or "When was the Eiffel Tower built?"
+
+Feel free to explore and interact with the assistant using natural language commands.
 
 ## Contributing
 
@@ -40,4 +54,4 @@ Contributions to the Pablo AI project are welcome! If you'd like to contribute, 
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+This project is licensed under the MIT License. 
