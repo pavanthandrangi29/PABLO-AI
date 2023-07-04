@@ -1,0 +1,16 @@
+openAI response for Prompt: using artificial intelligence write a code to print even numbers 
+ *************
+
+
+
+#include<stdio.h>
+
+int main(){
+    
+    int i;
+    printf("Even numbers are: ");
+    for (i=2; i<=100; i=i+2){
+        printf("%d ",i);
+    }
+    return 0;
+}
